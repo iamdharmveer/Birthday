@@ -19,29 +19,29 @@ class Birthday {
     this.spawnB = center + center / 4 | 0
     
     this.height = canvas.height = window.innerHeight
-    this.spawnC = this.height * .1
-    this.spawnD = this.height * .5
+    this.spawnC = this.height * .3
+    this.spawnD = this.height * .8
     
   }
   onClick(evt) {
      let x = evt.clientX || evt.touches && evt.touches[0].pageX
      let y = evt.clientY || evt.touches && evt.touches[0].pageY
      
-     let count = random(3,5)
+     let count = random(4,8)
      for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
         random(this.spawnA, this.spawnB),
         this.height,
         x,
         y,
-        random(300, 450),
-        random(30, 110)))
+        random(250, 450),
+        random(60, 110)))
           
      this.counter = -30
      
   }
   update() {
     ctx.globalCompositeOperation = 'hard-light'
-    ctx.fillStyle = 'rgba(20,20,20,0.15)'
+    ctx.fillStyle = 'rgba(40,60,80,0.65)'
     ctx.fillRect(0, 0, this.width, this.height)
 
     ctx.globalCompositeOperation = 'lighter'
