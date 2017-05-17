@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  background: #020202;
+  background: #120202;
   cursor: crosshair;
 }
+
 canvas{display:block}
 h1 {
   position: absolute;
@@ -12,6 +13,22 @@ h1 {
   color: #fff;
   font-family: "Source Sans Pro";
   font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+h3 {
+  transform: translate(-25%, -5%);
+  font-family: "Snell Roundhand, cursive;
+	font-variant: normal;
+	position: absolute;
+  top: 30%;
+  left: 50%;
+  line-height: 106.4px;
+  font-stretch: semi-condensed;
+  color: #f00;
+  font-style: oblique;
+  font-size: 6.5em;
   font-weight: 900;
   -webkit-user-select: none;
   user-select: none;
